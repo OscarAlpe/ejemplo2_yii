@@ -40,10 +40,12 @@ class SiteController extends Controller
     
     public function actionCatalogo() {
         
-        $listado = \app\models\Catalogo::find()->all();
+        $dataProvider = new \yii\data\ActiveDataProvider([
+            'query' => \app\models\Catalogo::find()
+        ]);
         
         return $this->render('catalogo',[
-            'datos'=>$listado,
+            'datos'=>$dataProvider,
         ]);
     }
 

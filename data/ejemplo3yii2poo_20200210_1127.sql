@@ -38,7 +38,7 @@ USE ejemplo3yii2poo;
 CREATE TABLE IF NOT EXISTS catalogo (
   id int(11) NOT NULL AUTO_INCREMENT,
   nombre varchar(100) DEFAULT NULL,
-  description varchar(100) DEFAULT NULL,
+  descripcion varchar(100) DEFAULT NULL,
   PRIMARY KEY (id)
 )
 ENGINE = INNODB,
