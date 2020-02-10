@@ -59,7 +59,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
+    public function actionInicio()
     {
         return $this->render('index');
     }
