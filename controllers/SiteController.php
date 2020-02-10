@@ -37,5 +37,14 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+    
+    public function actionCatalogo() {
+        
+        $listado = \app\models\Catalogo::find()->all();
+        
+        return $this->render('catalogo',[
+            'datos'=>$listado,
+        ]);
+    }
 
 }
