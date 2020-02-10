@@ -49,4 +49,13 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionRecomendar() {
+        $max = \app\models\Catalogo::find()->count();
+        $raleatrorio = random_int(0,$max-1);
+        $aleatorio = \app\models\Catalogo::find()->offset($raleatrorio)->one();
+        
+        return $this->render('recomendar',[
+            "registro"=>$aleatorio,
+        ]);
+    }
 }

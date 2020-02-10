@@ -40,7 +40,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Home', 'url' => ['/site/inicio']],
             ['label' => 'Catalogo', 'url' => ['/site/catalogo']],
-            ['label' => 'Recomendar', 'url' => ['/site/ecomendar']],
+            ['label' => 'Recomendar', 'url' => ['/site/recomendar']],
         ],
     ]);
     NavBar::end();

@@ -10,4 +10,3 @@ echo GridView::widget([
         'descripcion',
     ],
 ]);
-?>
